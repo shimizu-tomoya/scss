@@ -1,0 +1,35 @@
+@use '../global' as *;
+
+.u-hidden-pc {
+  @include responsive-down(lg) {
+    display: none;
+  }
+}
+
+.u-hidden-tabPc {
+  @include responsive-up(md) {
+    display: none;
+  }
+}
+
+.u-hidden-range {
+  @include responsive-range(md, md) {
+    display: none;
+  }
+}
+
+.u-hidden-tab {
+  @include responsive-down(md) {
+    display: none;
+  }
+}
+
+.u-hidden-sp {
+  @include responsive-down(sm) {
+    display: none;
+  }
+}
+
+.u-hidden {
+  display: none;
+}

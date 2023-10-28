@@ -1,0 +1,23 @@
+$color_black: #333 !default;
+$color_white: #fff !default;
+
+
+$font_black: $color_black !default;
+$font_white: $color_white !default;
+
+$breakpoints: (
+  'xs': (min-width: 0,
+  ),
+  'sm': (min-width: 576px,
+  ),
+  'md': (min-width: 768px,
+  ),
+  'lg': (min-width: 992px,
+  ),
+  'sl': (min-width: 1080px,
+  ),
+  'xl': (min-width: 1200px,
+  ),
+  'xxl': (min-width: 1400px,
+  ),
+  ) !default;

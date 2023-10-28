@@ -1,0 +1,32 @@
+@use '../../foundation/var' as *;
+@use 'responsive' as *;
+
+@mixin sectionPadding($top, $bottom, $topSp, $bottomSp) {
+  @include responsive-up(md) {
+    padding: $top 0 $bottom;
+  }
+  @include responsive-down(sm) {
+    padding: $topSp 0 $bottomSp;
+  }
+}
+
+@mixin sectionContainer($max-width, $width: 96%, $max-widthSp: 480px, $widthSp: 88%) {
+  width: $width;
+  margin: auto;
+  @include responsive-up(md) {
+    max-width: $max-width;
+  }
+  @include responsive-down(sm) {
+    width: $widthSp;
+    max-width: $max-widthSp;
+  }
+}
+
+@mixin contentsWrap($marginTop: 56px, $marginTopSp: 28px) {
+  @include responsive-up(md) {
+    margin-top: $marginTop;
+  }
+  @include responsive-down(sm) {
+    margin-top: $marginTopSp;
+  }
+}
